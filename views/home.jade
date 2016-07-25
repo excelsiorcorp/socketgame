@@ -1,0 +1,12 @@
+extends ./template.jade
+
+block main
+	div(id="maindiv")
+		div(id="inscription")
+			p Psedo
+			input(id="psedoinput" type="text" placeholder="Psedo")
+			input(id="inputsubmit" type="submit")
+		div(id="score")
+			each val in score
+				li
+					span #{val.psedo} #{val.time} 
